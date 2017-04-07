@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>倉敷で味わうプログラミング学習 - </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="description" content="倉敷市を中心に活動するプログラミング学習サービスです。なぜプログラミングを学ぶのか、なにからはじめたらいいのか？ご相談にのります。" >
+  <meta name="keywords" content="倉敷市,プログラミング,学習,Scratch,programming,なるーらぼ,nalulabo,minecraft,マインクラフト" >
+  <meta name="author" content="なるーらぼ" >
+  <!-- this document is written with markdown.
+    こちらは「なるーらぼ」が運営するプログラミング学習のための導入ページです。
+    ページのソースコードをご覧いただいている方へ、おススメの情報をご提供いたします。
+
+    ### おススメのプログラミング入門サイト（オンライン）
+
+    現在ではオンラインで入門することができるサービスが数多く公開されています。
+    おそらく日本でもっとも有名なのは、ドットインストールです。
+    このほかにも、大学生以上の方であればProgate（プロゲート）やCodePrep（コードプレップ）といった
+    オンラインエディタつきの優れた学習サイトがいくつもあります。
+
+    ProgateやCodePrepではウェブの主にブラウザで見える範囲のプログラミングについて
+    学習することができるのですが、サーバーで動作するほうのプログラミングについては
+    paiza（パイザ）の利用をおススメします。
+
+    ### 開発環境をつくるだけでわけがわからなくなる
+
+    いまから10年くらい前も、いまも変わらないのは「ちょっと試してみたい」というだけなのに
+    プログラミング開発環境を整えようと悪戦苦闘してしまうことになる、というものです。
+    このため、根気強く粘った方しか有意義な体験をすることが難しい状態でした。
+    しかし現在では上述したオンラインサービスで簡易な開発環境をもったものも増えてきました。
+    それに、ブラウザ上で開発することができるJsFiddle、NetFiddleなどオンライン統合開発環境も登場してきて
+    無理に環境を一からつくりあげる必要もなくなりました。
+    もしクレジットカード情報を入力してもよい、ということならcloud9というサービスも大変おススメです。
+    こちらはブラウザだけでサーバー環境ごと無料で利用することができるサービスです。
+    もちろんアクセス数が多くなければ無償の範囲内でサービスを公開することもできます。
+
+    ### 過去にプログラミングを勉強したが、挫折したという方へ
+
+    いままでに何度かプログラミングに挑戦したけど、挫折してしまったという経験があるかもしれません。
+    わたしも実は何度かあります。仕事にしているのに、です。
+    しかし一度離れてから再び戻ってきてみると、やたら苦手意識があったことも「あら？なんだ、そんなことだったのか」
+    と目から鱗が落ちることも頻繁に起こるのです。
+
+    時間がかかるかもしれませんが、時間がかかるのはできないからでも、アタマが悪いわけでも、勉強不足でもありません。
+    単純に、そのプログラミング言語、環境、ミドルウェア、ライブラリの文化になじんでいないだけなのです。
+    馴染めなくて去っていくこともできますが、ひとつずつを見れば納得できるものもいくつかはあるはずです。
+    無理に受け止めなくても大丈夫です。納得してから受け入れていけば、ゴールにはたどりつくことができます。
+
+  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="logo.png" rel="shortcut icon">
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><img class="circle responsive-img" src="logo.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://goo.gl/forms/JGV79Pjo8yHHtyq82">お問い合わせ</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="https://goo.gl/forms/JGV79Pjo8yHHtyq82">お問い合わせ</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center orange-text text-lighten-4">あなたは、なにをつくる？</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">スマホアプリ、ウェブページ…いろんなものをつくろう</h5>
+        </div>
+        <div class="row center">
+          <a href="#prog" id="download-button" class="btn-large waves-effect waves-light orange darken-1">プログラミングを学ぶ</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/bg-sea4.jpg" alt="周防大島から海を眺めると、素晴らしい景色です"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">mode_edit</i></h2>
+            <h5 class="center">プログラミング</h5>
+
+            <p class="light">日本語の読み書きができれば、それだけでコンピュータになにかをさせることができます。あとは、なにをつくるかだけです。</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">みんなでつくろう</h5>
+
+            <p class="light">プログラミングを楽しんでいるのは、世界中にいるこどもを含めた人々です。お絵かきや口笛を吹くように、コンピュータの世界を体験しましょう。</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">thumb_up</i></h2>
+            <h5 class="center">手ぶらでOK</h5>
+
+            <p class="light">プログラミングをはじめるために必要なのは、好奇心だけです。ほかには何も必要ありません。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper" id="prog">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light">あなたがつくり出す、あなただけの世界。</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/bg-prog.jpg" alt="macOSも好きですが、Windows10もLinuxも好きです"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send light-blue-text"></i></h3>
+          <h4>プログラミングで何ができるのか？</h4>
+          <p class="left-align light">
+            プログラミングは国語や算数を学ぶこととは異なります。どちらかというと絵や音楽、スポーツなどのような体で覚えるという側面と、
+            ものごとをゴールへ向かって進めるための論理的、戦略的な側面をあわせもった不思議な性質を持っています。
+            コンピュータプログラミングはそもそもこの世界をコンピュータによって再現するために考え出されました。
+            写真を撮ると、その絵が動き出す。そういったイメージです。この世界で受けた刺激を、コンピュータの中で再構築することでさまざまな価値を創造します。
+            ここでは、そのために必要になるものは絵であっても音楽であっても算数であっても、一緒に学びます。
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send light-blue-text"></i></h3>
+          <h4>学んでも、なれるのはプログラマなんでしょ？</h4>
+          <p class="left-align light">
+            プログラミングを学んでいる日本人の大半は、いわゆるシステムエンジニアという職種に該当します。
+            こうした仕事では、企業から依頼される情報システムを開発することが主な内容になります。
+            しかし、一方でプログラミングそのものは情報システムをつくるために存在しているわけではありません。
+            何もない、この世に存在していなかったものを自分の手でつくりあげていく、そのプロセスこそがプログラミングの醍醐味です。
+          </p>
+          <p>
+            この世に存在していなかったものをつくりあげるためには、ゴールを設定すること、ゴールに向かってやるべきことを洗い出すこと、
+            そしてやるべきことを確実に実行していくための段取り、さらには実行するための技術習得など、仮想の世界であっても現実の世界と
+            ほとんどかわりはありません。むしろ、危険な作業を伴わないため、こどものうちにシミュレーションすることすら可能になります。
+          </p>
+          <p>
+            プログラミングはシステムをつくるため、ゲームソフトをつくるためだけにあるわけではありません。
+            数学、物理学、化学、生物学などの研究や医療、アートやアニメーション制作、音楽制作やハンデを克服するための技術など
+            メディアで取り上げられているAI（人工知能）やロボットだけではなく、幅広く活用できるのです。
+            わたし自身がプログラミングを学ぶようになったきっかけも音楽でした。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light">きょうは、なにをしようか？</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/bg-sea3.jpg" alt="周防大島から海を眺めると、素晴らしい景色です"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send orange-text"></i></h3>
+          <h4>プログラミングは、どこからはじめても大丈夫</h4>
+          <p class="center-align light">
+            いままで、何度も失敗してきました。ダイエットでも英会話でも。何をやってもうまくいきません。
+            でも、プログラミングは気合も根性も覚悟も必要ありません。いつでもはじめることができ、いつ離れてもいいし戻ってきても構いません。
+            高額な教材も、高速なパソコンも、長いレクチャーも必要ありません。身のまわりにあるものからはじめていいのです。
+          </p>
+          <p class="center-align light">
+            もしも何からはじめたらいいかわからない。そういうときには、だまされたと思って次のなかからひとつ、選んでみてください。
+          </p>
+          <div class="row">
+
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/card-blog.jpg">
+                  <span class="card-title">ブログをかく</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    ブログは文章を書くだけではありません。魅力的な記事にするためには写真画像や動画を載せたり、読みやすい見た目にする必要があります。
+                    こうしたユーザー体験を改善するにはHTMLやCSSといった情報技術を活用する必要があります。
+                    ウェブページとまではいかなくても…という方はブログからはじめてみてはいかがでしょうか？
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/card-scratch2.jpg">
+                  <span class="card-title">アニメーションをつくる</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    もしも描いた絵が動き出したら。お気に入りの音楽にあわせて踊りだしたら。そんなことを想像してみてください。
+                    多くの人がニュースなどで知ることとなった、Scratchをつかうと簡単にアニメーションをつくることができます。
+                    しかも、オマケとしてプログラミング的な思考も手に入るかもしれません。一石二鳥ですね。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/card-mincraft.jpg">
+                  <span class="card-title">自分の世界をつくる</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    世界的に人気のあるコンピュータゲーム、マインクラフト。マインクラフトもひとりのプログラマが自分で遊ぶために開発したソフトウェアでした。
+                    マインクラフトは開発されたときからプログラミングによって内容を変更することができるものでした。
+                    ゲームの世界を通じて、自分だけの世界をつくりつつ、算数や社会、理科を学ぶことができたら最高ではありませんか？
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/card-sound.jpg">
+                  <span class="card-title">音楽をつくる</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    現代の音楽は、コンピュータプログラミングなしには語ることができません。1980年代に日本ではじまった電子楽器は世界中で使用され、デファクトスタンダードになりました。
+                    いまではパソコンさえあれば、高価なシンセサイザーなどを購入しなくても電子音楽を楽しむことができるようになりました。
+                    Sonic Piでギター演奏とジャムセッションを楽しむことができますよ。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/card-vba.jpg">
+                  <span class="card-title">Excelを自動化する</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    デスクワークで、いつも見ているのがExcelファイルだったとしたら。
+                    普段なにげなく繰り返している操作が一度に終わらせることができるとしたら、オートメーションを試してみたくなるでしょう。
+                    幸いなことに、Windowsパソコンを購入するとExcelがインストールされていることが多いので、すぐにはじめることができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/card-app.jpg">
+                  <span class="card-title">アプリをつくる</span>
+                </div>
+                <div class="card-content">
+                  <p>
+                    いつも利用している、タップすれば開くアプリがあることでしょう。そうしたアプリも、だれかがプログラミングしたものです。
+                    あなたの利用しているアプリは数年かかって習得した技術の粋をもって作り込まれています。
+                    そこまではできなくても、自分で簡単なものからつくってみたいと思ったことはありますか？ふつうはありません。
+                    でも、チャンスはいつもそばにあります。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light orange-text">だれでも最初は、不安なもの</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/bg-failure.jpg" alt="さいしょはうまくつくれなくて、あたりまえ"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send light-blue-text"></i></h3>
+          <h4>ご相談ください</h4>
+          <p class="left-align light">
+            どんな些細なことでも構いません。たとえば、こどものうちからプログラミングを習っていないと授業でついていけなくなるのではないか、あるいはプログラミングを習うとほんとうにお金持ちになれるのか、そんなことでも大丈夫です。
+            どんなものなのかもわからないことは、不安に感じて当たり前です。じっくりとお話をうかがいます。ご相談ください。
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send light-blue-text"></i></h3>
+          <h4>教えます</h4>
+          <p class="left-align light">
+            プログラミングを体験してみたい、という方には導入部分をお教えします。プログラミングの導入だけ学ぶのであれば、3か月から半年がひとつの目安になります。
+            しかし、プログラミングの学習は一生つづけることができる、とても有意義なものです。わたしもすでに15年近く学び続けています。
+            特に期間は設けていませんが、プログラミング環境を利用しにくるだけでも大丈夫です。
+          </p>
+          <p class="left-align light light-blue-text">
+            ただし、倉敷市内もしくはその近隣にお住いの方のみとさせていただきます。
+            ご了承ください。
+          </p>
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th>コース</th><th>概要</th><th>料金</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>小学生向け90分コース</td><td>ビジュアルプログラミングをつかった学習</td><td>1か月6,400円</td>
+              </tr>
+              <tr>
+                <td>中学生向け90分コース</td><td>ビジュアルプログラミングをつかった学習</td><td>1か月7,200円</td>
+              </tr>
+              <tr>
+                <td>一般向け90分コース</td><td>ご希望の環境をつかった学習</td><td>1か月6,400円</td>
+              </tr>
+              <tr>
+                <td>シニア向け90分コース</td><td>パソコン、スマホを活用した学習</td><td>1か月4,800円</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>お問い合わせはこちらから</p>
+          <p><a href="https://goo.gl/forms/JGV79Pjo8yHHtyq82" class="btn-large waves-effect waves-light light-blue darken-1">お問い合わせ</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">運営者情報</h5>
+          <p class="grey-text text-lighten-4">なるーらぼ：プログラミングに関する電子書籍の出版やプログラミング入門に関する情報提供を行っています。</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">関連リンク</h5>
+          <ul>
+            <li><a class="white-text" href="https://twitter.com/i/notifications">Twitter</a></li>
+            <li><a class="white-text" href="https://www.facebook.com/nalulabo/">Facebook</a></li>
+            <li><a class="white-text" href="https://github.com/nalulabo">Github</a></li>
+            <li><a class="white-text" href="https://marketplace.visualstudio.com/items?itemName=nalulabo.uwsc-support">VSCode Marketplace</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">連絡先</h5>
+          <ul>
+            <li><a class="white-text" href="https://goo.gl/forms/JGV79Pjo8yHHtyq82">お問い合わせフォーム</a></li>
+            <li class="white-text">Email: nalu.labo [at] gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+      <div class="container">
+        copyright 2017 nalulabo <a class="orange-text text-lighten-4" href="https://nalu-labo.amebaownd.com">なるーらぼ</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
